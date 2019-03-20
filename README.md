@@ -8,6 +8,27 @@ Rasa is an open source Conversational AI framework. What I like about Rasa is yo
 
 Rasa has two main components — Rasa NLU and Rasa Core.
 
+How to use this repo
+
+This is how to use it:
+Training the NLU model
+
+To train and test the model run:
+ 
+    python nlu_model.py
+
+Training the Rasa Core model
+
+
+Start the custom action server by running:
+
+    python -m rasa_core_sdk.endpoint --actions actions
+
+Open a new terminal and train the Rasa Core model by running:
+
+    python dialogue_management_model.py
+
+Talk to the chatbot once it's loaded.
 
 
 
